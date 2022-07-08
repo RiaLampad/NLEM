@@ -1,13 +1,14 @@
 <div id="top"></div>
 
-<p style="text-align: left;">
+
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/RiaLampad/NLEM">
-    <img src="Images/Roughness.png" alt="Logo" width="400" height="150">
+    <img src="Images/Roughness.png" alt="Logo" width="600" height="200">
   </a>
+</div>
 
 
 
@@ -24,7 +25,7 @@ The NLEM model is a nonlocal effective medium model that predicts the morphology
 
 **If you use NLEM in your work, we ask that you please cite the following article**
 
-Eleftheria Lampadariou , Konstantinos Kaklamanis , Dimitrios Goustouridis , Ioannis Raptis , Elefterios Lidorikis, "Nonlocal effective medium (NLEM) for quantitative modelling of nanoroughness in spectroscopic reflectance", 2022 (accepted manuscript in Photonics)
+Eleftheria Lampadariou , Konstantinos Kaklamanis , Dimitrios Goustouridis , Ioannis Raptis , Elefterios Lidorikis, *"Nonlocal effective medium (NLEM) for quantitative modelling of nanoroughness in spectroscopic reflectance"*, 2022 (**accepted manuscript in Photonics**)
 
 
 ### Prerequisites
@@ -39,6 +40,7 @@ Simply Run the bash script `run` provided inside the Source directory. This crea
 ### Keyword reference manual
 
 For the basic keywords, please refer to the [NLEM manual](https://github.com/RiaLampad/NLEM/blob/main/Manual/MANUAL_for_code.pdf)_
+
 
 ### Running Example
 
@@ -92,8 +94,9 @@ The **expected results** for the NLEM reflectance in comparison to the reference
 <br />
 <div align="center">
   <a href="https://github.com/RiaLampad/NLEM">
-    <img src="Images/Fit.png" alt="Logo" width="150" height="150">
+    <img src="Images/Fit.png" alt="Logo" width="300" height="300">
   </a>
+</div>
 
 
 
@@ -102,10 +105,10 @@ The **expected results** for the NLEM reflectance in comparison to the reference
 
 Feel free to contact us for any questions
 
-Eleftheria Lampadariou   - lampadariou.ele@gmail.com
-Konstantinos Kaklamanis  - k.kaklamanis@uoi.gr
+1. Eleftheria Lampadariou   - lampadariou.ele@gmail.com
+2. Konstantinos Kaklamanis  - k.kaklamanis@uoi.gr
 
 
 
 
-</p>
+
