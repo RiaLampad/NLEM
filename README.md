@@ -34,7 +34,12 @@ Eleftheria Lampadariou , Konstantinos Kaklamanis , Dimitrios Goustouridis , Ioan
   ```
 
 ### Installation
-Simply Run the bash script `run` provided inside the Source directory. This creates a `NLEM` model executable 
+Run the following commands inside Source directory:
+'''
+shell
+icc *.cpp local_minimization/*.cpp
+mv a.out NLEM
+'''
 
 
 ### Keyword reference manual
@@ -47,7 +52,7 @@ For the basic keywords, please refer to the [NLEM manual](https://github.com/Ria
  ```
 1. Create a simulation direcotry, e.g. Rough_1
 2. Make a copy of files contained in the direcotry Input_data inside the directory Rough_1
-3. Run the executable `./NLEM` inside the direcotry Rough_1
+3. Run the executable `NLEM` inside the direcotry Rough_1
  ```
 Below is an example where the NLEM model characterizes the morphology of the rough surface of a thin film with height H=32 nm, period of the square based pyramids L=32 nm and shape s=1 . The thin film is SiO2 with thickness 2um placed on a substrate of Si. The calculated reflectance of FDTD method is contained in file R_data. The input file that corresponds to the aforementioned specifications, follows. 
 
