@@ -1,0 +1,3 @@
+#!/bin/bash
+icc *.cpp local_minimization/*.cpp
+./a.out

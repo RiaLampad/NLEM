@@ -1,0 +1,36 @@
+#reflectance file
+REFLECTANCE R_data
+#
+# define structure: material, thickness [nm], if to be fitted (0/1)
+MATERIAL air     0       0
+MATERIAL SiO2    2000    1
+MATERIAL Si      0       0
+#
+# define fitting: type, value (0/1)
+FIT_TYPE ROUGHNESS	      1
+#
+# define fit limits and models
+FIT_LIMITS  RUNS_NUM    10
+FIT_LIMITS  ROUGH_LRS   30
+FIT_LIMITS  LAMDA_MIN   300.0
+FIT_LIMITS  LAMDA_MAX   1200
+FIT_LIMITS  LAMDA_NUM   1200
+#
+# define fit parameters: initial, min value, max value
+FIT_PARAM ROUGH 32 32 32   #roughness height (nm)
+FIT_PARAM ROUGH 0.5 0.0 2.0 #roughness shape (0-5)
+#
+# other parameters
+EMT_PARAM	PMAX	5.5080	1.8221	-0.2326		#slice pmax
+EMT_PARAM	GAMM	-18.493	-1.0616	 0.0	        #slice gamma
+EMT_PARAM       DELT	0.5690	0.039	-0.0053 	#slice delta
+EMT_PARAM	SEMI	1.2500	0.0	0.0		#semi-infinite
+#
+WEIGHT_PARAM    BETA   0.0166   0.0041  0
+WEIGHT_PARAM    ALPHA   -0.4762   0.091   0
+#
+# other options
+OPTION		PRINT	1		#print info on screen
+OPTION		SMOOTH	0		#smooth reflection measured data
+#
+

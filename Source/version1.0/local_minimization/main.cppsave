@@ -1,0 +1,52 @@
+#include "local_minimization.h"
+
+// The objective function.
+double rosenbrock ( double [], int );
+
+int main ( )
+{
+	local_minimization *a;
+	double x[2], g[2], val;
+	int i, noc, n;
+
+//  Dimensionality of the objective function.
+	n = 2;
+
+//  Create the minimization object.
+	a = new local_minimization(&rosenbrock,n);
+
+//  Assign initial values to the minimization variables.
+	a->set_variable(0,-2.0);
+	a->set_variable(1, 2.0);
+
+//  Set lower/upper bounds (optional).
+	for (i=0; i<n; i++) {
+		a->set_lower_bound(i,-100.0);
+		a->set_upper_bound(i, 100.0);
+	}
+
+//  Run the minimizer.
+	a->run(1000);
+
+//  Get optimization results.
+	for (i=0; i<n; i++)
+		x[i] = a->get_minimizer(i);
+	val  = a->get_lower_value();
+	noc  = a->get_function_counter();
+	a->get_gradient(g);
+
+// Destroy the minimization object.
+	delete a;
+
+	cout << setprecision(14);
+	cout << "Minimizer:" << x[0] << " " << x[1] << endl;
+	cout << "VALUE = " << val << endl;
+	cout << "#OF CALLS = " << noc << endl;
+	cout << scientific << setprecision(14);
+	cout << "Gradient:" << g[0] << " " << g[1] << endl;
+}
+
+double rosenbrock ( double x[], int n )
+{
+	return 100.0 * pow((x[1]-pow(x[0],2)),2) + pow(1.0-x[0],2);
+}
