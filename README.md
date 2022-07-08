@@ -35,11 +35,10 @@ Eleftheria Lampadariou , Konstantinos Kaklamanis , Dimitrios Goustouridis , Ioan
 
 ### Installation
 Run the following commands inside Source directory:
-'''
-shell
+```shell
 icc *.cpp local_minimization/*.cpp
 mv a.out NLEM
-'''
+```
 
 
 ### Keyword reference manual
