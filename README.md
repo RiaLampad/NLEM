@@ -49,7 +49,7 @@ For the basic keywords, please refer to the [NLEM manual](https://github.com/Ria
  ```
 Below is an example where the NLEM model characterizes the morphology of the rough surface of a thin film with height H=32 nm, period of the square based pyramids L=32 nm and shape s=1 . The thin film is SiO2 with thickness 2um placed on a substrate of Si. The calculated reflectance of FDTD method is contained in file R_data. The input file that corresponds to the aforementioned specifications, follows. 
 
-```
+```shell
 #reflectance file
 REFLECTANCE R_data
 #
