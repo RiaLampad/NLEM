@@ -6,10 +6,9 @@
 <br />
 <div align="center">
   <a href="https://github.com/RiaLampad/NLEM">
-    <img src="Images/Roughness.png" alt="Logo" width="350" height="150">
+    <img src="Images/Roughness.png" alt="Logo" width="400" height="150">
   </a>
 
-<h3 align="center">Non Local Effective Medium (NLEM) model</h3>
 
 
 <!-- ABOUT THE PROJECT -->
