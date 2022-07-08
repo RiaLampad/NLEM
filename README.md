@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-
+<p style="text-align: left;">
 
 <!-- PROJECT LOGO -->
 <br />
@@ -106,6 +106,6 @@ Eleftheria Lampadariou   - lampadariou.ele@gmail.com
 Konstantinos Kaklamanis  - k.kaklamanis@uoi.gr
 
 
-</div>
 
 
+</p>
