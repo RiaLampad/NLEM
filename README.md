@@ -93,7 +93,7 @@ OPTION          SMOOTH  0               #smooth reflection measured data
 #
 ```
 
-The **expected results** for the NLEM reflectance in comparison to the reference reflectance are shown in the figure below: 
+The **expected results** for the NLEM reflectance in comparison to the reference reflectance are saved in the file results_reflectance. The latter are plotted in the figure below: 
 
 <br />
 <div align="center">
